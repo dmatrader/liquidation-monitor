@@ -6,7 +6,11 @@
 
 **中文**: 这是一个基于 Flask 和 WebSocket 的实时加密货币爆仓监控系统，支持币安和OKX两大交易所的爆仓数据收集、分析和可视化展示。系统提供实时爆仓流、累计统计、热门爆仓币种排行等功能，帮助交易者及时了解市场风险。
 
+**⚠️ 重要提醒**: 币安清算数据存在低报现象（可能低估100倍），本系统数据仅供参考，实际清算规模可能远大于显示数据。
+
 **English**: This is a real-time cryptocurrency liquidation monitoring system based on Flask and WebSocket, supporting liquidation data collection, analysis and visualization from Binance and OKX exchanges. The system provides real-time liquidation streams, cumulative statistics, and top liquidation coins ranking to help traders understand market risks.
+
+**⚠️ Important Notice**: Binance liquidation data may be underreported (potentially by 100x), this system data is for reference only, actual liquidation scale may be much larger than displayed.
 
 ## 🚀 在线演示 / Live Demo
 
@@ -60,6 +64,17 @@ python liquidation_analysis_web.py
 - **OKX合约**: WebSocket实时爆仓数据流
 - **数据格式**: 时间、币对、交易所、价格、方向、金额
 - **更新频率**: 实时推送，1秒更新间隔
+
+### ⚠️ 重要数据说明 / Important Data Notice
+
+**币安清算数据局限性**: 根据 [Hyperliquid CEO Jeff Yan 的批评](https://crypto.news/hyperliquid-ceo-questions-binances-liquidation-transparency/)，币安的清算数据流存在严重的**低报现象**：
+
+- **数据窗口限制**: 币安以1000毫秒为窗口，每个窗口内只推送一笔最新清算订单
+- **低估风险**: 如果同一毫秒内有多笔清算，其他清算会被忽略，可能导致实际清算数量被**低估高达100倍**
+- **高波动时期**: 在市场高波动时期，这种低报现象更加严重
+- **对比**: 相比之下，Hyperliquid等去中心化交易所的所有清算数据都是链上实时公开透明的
+
+**使用建议**: 本系统展示的币安清算数据仅供参考，实际清算规模可能远大于显示数据，特别是在市场剧烈波动时期。
 
 ## 🔔 关注我们 / Follow Us
 
