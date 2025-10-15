@@ -1,0 +1,6 @@
+flask==2.3.3
+flask-cors==4.0.0
+pandas==2.0.3
+websockets==11.0.3
+aiohttp==3.8.5
+asyncio
