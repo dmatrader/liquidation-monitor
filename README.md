@@ -12,9 +12,9 @@
 
 **⚠️ Important Notice**: Binance liquidation data may be underreported (potentially by 100x), this system data is for reference only, actual liquidation scale may be much larger than displayed.
 
-## 🚀 在线演示 / Live Demo
+## 🚀 快速体验 / Quick Experience
 
-**[点击体验 / Click to Experience](https://dmatrader.github.io/liquidation-monitor/)**
+**本地运行体验**: 按照下方使用说明在本地运行程序即可体验完整功能
 
 ## ✨ 功能特性 / Features
 
@@ -75,18 +75,6 @@ python liquidation_analysis_web.py
 - **对比**: 相比之下，Hyperliquid等去中心化交易所的所有清算数据都是链上实时公开透明的
 
 **使用建议**: 本系统展示的币安清算数据仅供参考，实际清算规模可能远大于显示数据，特别是在市场剧烈波动时期。
-
-## 🔔 关注我们 / Follow Us
-
-### 📢 币安合约异动告警群
-**实时监控币安全部合约异动，可定制币对范围和涨跌幅提醒阈值**
-
-- **Telegram频道**: 
-- **功能**: 7年稳定返佣渠道，机器人可定制提醒
-- **邀请码**: 
-  - 币安: `MAPAMBQ1` (手续费永久返还)
-  - OKX: `TRADER8` (手续费永久返还)
-  - Bitget: `TRADER8` (手续费永久返还)
 
 ## 🔗 相关链接 / Related Links
 
